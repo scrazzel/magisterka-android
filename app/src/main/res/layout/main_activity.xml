@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#545454"
+    tools:context=".main_activity"
+    >
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="182dp"
+        app:srcCompat="@drawable/loginimage" />
+
+    <EditText
+        android:id="@+id/input_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="201dp"
+        android:layout_marginHorizontal="25dp"
+        android:background="@drawable/rounded_inputs"
+        android:ems="10"
+        android:hint="Email..."
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:id="@+id/input_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="137dp"
+        android:layout_marginHorizontal="25dp"
+        android:background="@drawable/rounded_inputs"
+        android:ems="10"
+        android:hint="Hasło..."
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="72dp"
+        android:layout_marginHorizontal="25dp"
+        android:background="@drawable/rounded_button_login"
+        android:text="Zaloguj się" />
+
+</RelativeLayout>

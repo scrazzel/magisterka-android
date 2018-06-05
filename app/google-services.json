@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "695417173659",
+    "firebase_url": "https://albumslibrary.firebaseio.com",
+    "project_id": "albumslibrary",
+    "storage_bucket": "albumslibrary.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:695417173659:android:c658affca6dbe8a1",
+        "android_client_info": {
+          "package_name": "com.example.admin.albumsviewer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "695417173659-kf9o8eaio8lqbevkq3jcrrc9uhitn5ul.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "695417173659-kf9o8eaio8lqbevkq3jcrrc9uhitn5ul.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxMx2wiNhhHkKrhoS4R_e9zmce5s-jKNE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
