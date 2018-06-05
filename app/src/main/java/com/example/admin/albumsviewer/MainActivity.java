@@ -5,6 +5,9 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -81,6 +84,23 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-    
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(R.menu.logout,menu);
+
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int resID = item.getItemId();
+        if (resID == R.id.logout){
+            // mechanizm wylogowania z firebase
+            Toast.makeText(MainActivity.this, "Zaimplementowac wylogowanie", Toast.LENGTH_SHORT).show();
+        }
+
+        return true;
+    }
 }
