@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlbumDetails"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:layout_marginHorizontal="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/albumTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="10dp"
+            android:textAlignment="center"
+            android:background="#ffffff"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:text="album"
+            />
+
+        <TextView
+            android:id="@+id/albumBand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="10dp"
+            android:textAlignment="center"
+            android:background="#eceff4"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:text="zespol"
+            />
+
+        <TextView
+            android:id="@+id/albumGenre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="10dp"
+            android:textAlignment="center"
+            android:background="#ffffff"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:text="gatunek"
+            />
+
+        <TextView
+            android:id="@+id/albumPublicationDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="10dp"
+            android:textAlignment="center"
+            android:background="#eceff4"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:text="data wydania"
+            />
+
+        <TextView
+            android:id="@+id/albumPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="10dp"
+            android:textAlignment="center"
+            android:background="#ffffff"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:text="cena"
+            />
+
+
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/albumSongsHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="10dp"
+            android:textAlignment="center"
+            android:background="#282828"
+            android:textSize="18dp"
+            android:textColor="#ffffff"
+            android:text="Lista utworów"
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
