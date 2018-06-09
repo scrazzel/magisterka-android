@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardBackgroundColor="#ffffff"
     app:cardCornerRadius="3dp"
@@ -13,30 +13,74 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="5dp"
+        >
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/albumTitle"
-            android:text="Title"
-            android:textColor="#000"
-            android:textSize="22dp"
-            android:textStyle="bold"
-            />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/albumBand"
-            android:textSize="20dp"
-            android:text="Band"/>
-        
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/albumBandLogo"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitStart"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/albumTitle"
+                    android:text="Title"
+                    android:textColor="#000"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/albumBand"
+                    android:textSize="14dp"
+                    android:textColor="#000"
+                    android:text="Band"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="300dp"
             android:id="@+id/albumCover"
             android:scaleType="centerCrop"
             android:adjustViewBounds="true"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Szczegóły"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:layout_marginHorizontal="25dp"
+            android:background="#282828"
+            android:paddingVertical="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"
+            />
 
     </LinearLayout>
 
