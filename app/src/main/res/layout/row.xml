@@ -54,7 +54,35 @@
                     android:id="@+id/albumBand"
                     android:textSize="14dp"
                     android:textColor="#000"
-                    android:text="Band"/>
+                    android:text="Band"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/albumGenre"
+                    android:textSize="14dp"
+                    android:textColor="#000"
+                    android:text="Band"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/albumPrice"
+                    android:textSize="14dp"
+                    android:textColor="#000"
+                    android:text="Band"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/albumPublicationDate"
+                    android:textSize="14dp"
+                    android:textColor="#000"
+                    android:text="Band"
+                    android:visibility="gone"/>
 
             </LinearLayout>
 
@@ -65,22 +93,8 @@
             android:layout_width="match_parent"
             android:layout_height="300dp"
             android:id="@+id/albumCover"
-            android:scaleType="centerCrop"
+            android:scaleType="fitXY"
             android:adjustViewBounds="true"/>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Szczegóły"
-            android:textColor="#ffffff"
-            android:textSize="18dp"
-            android:layout_marginHorizontal="25dp"
-            android:background="#282828"
-            android:paddingVertical="10dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginRight="25dp"
-            android:layout_marginTop="10dp"
-            />
 
     </LinearLayout>
 
