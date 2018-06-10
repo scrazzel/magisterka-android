@@ -1,27 +1,15 @@
 package com.example.admin.albumsviewer;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Album {
     String nazwa;
     String wykonawca;
-    String gatunek;
-    int cena;
-    int rokWydania;
     String okladkaAlbumu;
     String logoZespolu;
-
-    public Album(){
-
-    }
-
-    public Album(String nazwa, String wykonawca, String gatunek, int cena, int rokWydania, String okladkaAlbumu, String logoZespolu) {
-        this.nazwa = nazwa;
-        this.wykonawca = wykonawca;
-        this.gatunek = gatunek;
-        this.cena = cena;
-        this.rokWydania = rokWydania;
-        this.okladkaAlbumu = okladkaAlbumu;
-        this.logoZespolu = logoZespolu;
-    }
+    Info info;
+    ArrayList<String> utwory;
 
     public String getNazwa() {
         return nazwa;
@@ -39,30 +27,6 @@ public class Album {
         this.wykonawca = wykonawca;
     }
 
-    public String getGatunek() {
-        return gatunek;
-    }
-
-    public void setGatunek(String gatunek) {
-        this.gatunek = gatunek;
-    }
-
-    public int getCena() {
-        return cena;
-    }
-
-    public void setCena(int cena) {
-        this.cena = cena;
-    }
-
-    public int getRokWydania() {
-        return rokWydania;
-    }
-
-    public void setRokWydania(int rokWydania) {
-        this.rokWydania = rokWydania;
-    }
-
     public String getOkladkaAlbumu() {
         return okladkaAlbumu;
     }
@@ -77,5 +41,32 @@ public class Album {
 
     public void setLogoZespolu(String logoZespolu) {
         this.logoZespolu = logoZespolu;
+    }
+
+    public Info getInfo() {
+        return info;
+    }
+
+    public void setInfo(Info info) {
+        this.info = info;
+    }
+
+    public ArrayList<String> getUtwory() {
+        return utwory;
+    }
+
+    public void setUtwory(ArrayList<String> utwory) {
+        this.utwory = utwory;
+    }
+
+    public Album(){}
+
+    public Album(String nazwa, String wykonawca, String okladkaAlbumu, String logoZespolu, Info info, ArrayList<String> utwory) {
+        this.nazwa = nazwa;
+        this.wykonawca = wykonawca;
+        this.okladkaAlbumu = okladkaAlbumu;
+        this.logoZespolu = logoZespolu;
+        this.info = info;
+        this.utwory = utwory;
     }
 }
