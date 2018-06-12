@@ -33,7 +33,7 @@ public class AlbumsList extends AppCompatActivity {
         setContentView(R.layout.albums_list);
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        //toolbar.setTitle("Biblioteka albumów");
+        toolbar.setTitle("Biblioteka muzyczna");
         setSupportActionBar(toolbar);
 
         recyclerView = findViewById(R.id.recyclerView);

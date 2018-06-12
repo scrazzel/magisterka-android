@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        //toolbar.setTitle("Biblioteka albumów");
+        toolbar.setTitle("Biblioteka muzyczna");
         setSupportActionBar(toolbar);
 
         input_email = (EditText) findViewById(R.id.input_email);

@@ -19,7 +19,7 @@ public class AlbumDetails extends AppCompatActivity {
         //toolbar.setTitle("Biblioteka albumów");
         setSupportActionBar(toolbar);
 
-        toolbar.setTitle("Szczegóły albumu");
+        toolbar.setTitle("Informacje o albumie");
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
