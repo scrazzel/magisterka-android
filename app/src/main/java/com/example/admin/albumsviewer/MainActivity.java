@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     EditText input_email;
     EditText input_password;
     Button button_login;
+    ProgressBar progressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         input_email = (EditText) findViewById(R.id.input_email);
         input_password = (EditText) findViewById(R.id.input_password);
         button_login = (Button) findViewById(R.id.button_login);
+        progressBar = (ProgressBar) findViewById(R.id.progressbar);
         auth = FirebaseAuth.getInstance();
         authStateListener = new FirebaseAuth.AuthStateListener() {
             @Override
@@ -57,7 +60,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //Toast.makeText(getApplicationContext(), "Button dziala", Toast.LENGTH_LONG).show();
                 //Toast.makeText(getApplicationContext(), input_email.getText().toString(), Toast.LENGTH_LONG).show();
-
+                button_login.setVisibility(View.GONE);
+                progressBar.setVisibility(View.VISIBLE);
                 signIn();
                 // mechanizm logowania
             }
@@ -79,7 +83,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(!task.isSuccessful()){
-                    Toast.makeText(getApplicationContext(), "Nie udalo sie zalogowac", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Podano nieprawidłowe dane logowania!", Toast.LENGTH_LONG).show();
+                    progressBar.setVisibility(View.GONE);
+                    button_login.setVisibility(View.VISIBLE);
                 }
             }
         });
@@ -93,14 +99,4 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        int resID = item.getItemId();
-        if (resID == R.id.logout){
-            // mechanizm wylogowania z firebase
-            Toast.makeText(MainActivity.this, "Zaimplementowac wylogowanie", Toast.LENGTH_SHORT).show();
-        }
-
-        return true;
-    }
 }

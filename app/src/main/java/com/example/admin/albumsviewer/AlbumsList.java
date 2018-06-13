@@ -123,7 +123,7 @@ public class AlbumsList extends AppCompatActivity {
         if (resID == R.id.logout){
             // mechanizm wylogowania z firebase
             FirebaseAuth.getInstance().signOut();
-            Toast.makeText(AlbumsList.this, "Wylogowałeś się!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(AlbumsList.this, "Wylogowano pomyślnie!", Toast.LENGTH_SHORT).show();
 
             startActivity(new Intent(AlbumsList.this, MainActivity.class));
         }
