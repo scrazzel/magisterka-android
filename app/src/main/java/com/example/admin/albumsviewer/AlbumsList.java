@@ -74,17 +74,12 @@ public class AlbumsList extends AppCompatActivity {
                                 TextView albumGenre = view.findViewById(R.id.albumGenre);
                                 TextView albumPrice = view.findViewById(R.id.albumPrice);
                                 TextView albumPublicationDate = view.findViewById(R.id.albumPublicationDate);
-                                //TextView tvGenre = view.findViewById(R.id.);
-                                //TextView tvPublicationDate = view.findViewById(R.id.tvPublicationDate);
-                                //TextView tvPrice = view.findViewById(R.id.tvPrice);
 
                                 String mTitle = albumTitle.getText().toString();
                                 String mBand = albumBand.getText().toString();
                                 String mGenre = albumGenre.getText().toString();
                                 String mPrice = albumPrice.getText().toString();
                                 String mPublicationDate = albumPublicationDate.getText().toString();
-
-                                // tutaj jeszcze dociagal obrazek
 
                                 Intent intent = new Intent(view.getContext(), AlbumDetails.class);
 
@@ -95,11 +90,6 @@ public class AlbumsList extends AppCompatActivity {
                                 intent.putExtra("publicationDate", mPublicationDate);
 
                                 startActivity(intent);
-                            }
-
-                            @Override
-                            public void onItemLongClick(View view, int position) {
-
                             }
                         });
                         return viewHolder;

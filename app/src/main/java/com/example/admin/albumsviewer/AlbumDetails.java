@@ -16,14 +16,12 @@ public class AlbumDetails extends AppCompatActivity {
         setContentView(R.layout.album_details);
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        //toolbar.setTitle("Biblioteka albumów");
         setSupportActionBar(toolbar);
-
         toolbar.setTitle("Informacje o albumie");
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        //getSupportActionBar().setHomeAsUpIndicator(R.drawable.back);
+
         detailsTitle = (TextView) findViewById(R.id.detailsTitle);
         detailsBand = (TextView) findViewById(R.id.detailsBand);
         detailsGenre = (TextView) findViewById(R.id.detailsGenre);

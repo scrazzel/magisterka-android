@@ -16,7 +16,6 @@ public class ViewHolder extends RecyclerView.ViewHolder{
         super(itemView);
         mView = itemView;
 
-        //item click
         itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -24,25 +23,14 @@ public class ViewHolder extends RecyclerView.ViewHolder{
             }
         });
 
-        // item long click
-        itemView.setOnLongClickListener(new View.OnLongClickListener() {
-            @Override
-            public boolean onLongClick(View view) {
-                mClickListener.onItemLongClick(view, getAdapterPosition());
-                return true;
-            }
-        });
     }
 
     public void setDetails(Context ctx, String title, String band, String cover, String logo, String genre, double price, int publicationDate){
         TextView albumTitle = (TextView) mView.findViewById(R.id.albumTitle);
         TextView albumBand = (TextView) mView.findViewById(R.id.albumBand);
-
-        // dodatki
         TextView albumGenre = (TextView) mView.findViewById(R.id.albumGenre);
         TextView albumPrice = (TextView) mView.findViewById(R.id.albumPrice);
         TextView albumPublicationDate = (TextView) mView.findViewById(R.id.albumPublicationDate);
-
 
         ImageView albumCover = (ImageView) mView.findViewById(R.id.albumCover);
         ImageView albumBandLogo = (ImageView) mView.findViewById(R.id.albumBandLogo);
@@ -62,7 +50,6 @@ public class ViewHolder extends RecyclerView.ViewHolder{
 
     public interface ClickListener {
         void onItemClick(View view, int position);
-        void onItemLongClick(View view, int position);
     }
 
     public void setOnClickListener(ViewHolder.ClickListener clickListener){
